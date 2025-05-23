@@ -1,0 +1,117 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+
+    /* background-image: url(./image/thumb-22.jpg) ; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+}
+  .bg-video {
+      position: absolute;
+      top: 0;
+      left: 0;
+       width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    
+    }
+.containers{
+    background-color: rgb(57, 181, 181);
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    max-height: 410px;
+}
+header{
+    padding: 25px;
+  background: radial-gradient(circle,rgba(238, 174, 202, 1) 0%, rgba(73, 133, 201, 1) 100%);
+   color: rgb(184, 74, 184);
+}
+h1{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.input-section{
+    display: flex;
+    gap: 10px;
+}
+
+/* input cho cái nào có dòng add new */
+/*flex 1 là để khi co giản vẫn giữ nguyên flex1 chỉ co giản tk còn lại */
+input[type = "text"]{
+    flex: 1;
+    padding: 12px 15px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 55px;
+    width: 450px;
+}
+
+.input-section button {
+    padding: 15px 20px;
+    color: aliceblue;
+    background-color: rgb(43, 168, 168);
+    border-radius: 555px;
+    outline: none;
+  font-weight: bold;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+.input-section button:hover{
+    background-color:rgb(5, 67, 67);
+}
+
+.todos-container{
+    padding: 25px;
+    overflow-y: auto;
+    max-height: 250PX;
+    background-color: aliceblue;
+}
+.todo-item{
+    display: flex;
+    background-color: rgb(164, 204, 224);
+    justify-content: space-between;
+    align-items:center;
+    padding: 15px;
+    margin-bottom: 10px;
+     border-radius: 10px;
+}
+.todo-item:hover{
+transform:translateY(-3px);
+}
+.todo-content{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+ input[type = "checkbox"]{
+    width: 20px;
+    height: 20px;
+}
+.todo-acctions{
+  display: flex;
+  gap: 20px;
+}
+.todo-actions button{
+    background:none;
+    color: rgb(14, 15, 18);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 7px;
+    font-size: 15px;
+}
+.todo-actions button:hover{
+    color: rgb(14, 139, 212);
+}
+

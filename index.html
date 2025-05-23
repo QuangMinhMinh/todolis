@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo List App</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <video autoplay muted loop class="bg-video">
+      <source src="./image/12838408_3840_2160_24fps.mp4" type="video/mp4" />
+      <!-- autoplay: tự động phát
+🔹 muted: tắt âm thanh (cần để trình duyệt cho phép autoplay)
+🔹 loop: lặp lại video
+🔹 playsinline: giúp phát video trong thẻ nhỏ, không fullscreen (đặc biệt trên iOS)
+🔹 class="bg-video": để bạn có thể chỉnh style bằng CSS -->
+    </video>
+    <div class="containers">
+      <header>
+        <h1>TodoList QuangMinh</h1>
+
+        <div class="input-section">
+          <input id="todo-input" type="text" placeholder="Add new task..." />
+          <button id="add-button">add</button>
+        </div>
+      </header>
+      <main class="todos-container">
+        <ul class="todo-list">
+          <li class="todo-item">
+            <div class="todo-content">
+              <input type="checkbox" />
+              <div>
+                <span>test</span>
+                <p>Created: test</p>
+              </div>
+            </div>
+
+            <div class="todo-actions">
+              <button onclick="handleUpdate(1, 'Hello123')">
+                <i class="fa-solid fa-pen-to-square"></i>
+              </button>
+              <button onclick="handleDelete(2)">
+                <i class="fa-solid fa-trash-can"></i>
+              </button>
+            </div>
+          </li>
+        </ul>
+      </main>
+    </div>
+
+    <!-- sweetalert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- dùng web axios-http.com -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
