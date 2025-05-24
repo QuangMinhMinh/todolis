@@ -84,7 +84,7 @@ async function addTodo() {
 
 Swal.fire({
   title: "Good job!",
-  text: "concac",
+  text: "succesfully",
   icon: "success"
 })
    }catch (error){

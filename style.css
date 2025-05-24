@@ -115,3 +115,17 @@ transform:translateY(-3px);
     color: rgb(14, 139, 212);
 }
 
+@media only screen and (max-width:600px){
+.bg-video{
+       width: 100%;
+      height: 100%;
+}
+.containers{
+    width: 80%;
+    border-radius: 10px;
+    max-height: 350px;
+}
+
+
+}
+
